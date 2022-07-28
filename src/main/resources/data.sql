@@ -1,2 +1,0 @@
-INSERT INTO Cliente (id, apellido,cedula,correo, direccion, nombre, telefono) VALUES('1', 'Sancnhez', '0107128100', 'ivan@gmail.com', 'cdl.Tome', 'Ivan','419999');
-INSERT INTO Usuario (id, correo, password,rol, cliente_id) VALUES('1','ivan@gmail.com', 'ivan', 'cliente', 1);
