@@ -2,9 +2,17 @@ package ec.edu.ups.BoscoMarketApi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class BoscoMarketApiApplication {
-	public static void main(String[] args) { SpringApplication.run(BoscoMarketApiApplication.class, args);
-	}
+public class BoscoMarketApiApplication extends SpringBootServletInitializer {
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder){
+        return builder.sources(BoscoMarketApiApplication.class);
+    }
+	
+    public static void main(String[] args) { SpringApplication.run(BoscoMarketApiApplication.class, args);
+    }
 }
